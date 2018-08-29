@@ -125,6 +125,7 @@ export class InfoWindow extends React.PureComponent {
     )
     this.state[INFO_WINDOW].setContent(content)
     open(this.state[INFO_WINDOW], this.context[ANCHOR])
+    this.state.infoWindow.setZIndex(1)
   }
 
   componentDidUpdate(prevProps) {
